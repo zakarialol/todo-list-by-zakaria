@@ -1,0 +1,194 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.items-container{
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 6px;
+}
+.items-container::-webkit-scrollbar{
+    width: 8px;
+}
+.items-container::-webkit-scrollbar-track{
+    background-color: #e6e6e6;
+}
+.items-container::-webkit-scrollbar-thumb{
+    background: #5fb8ff;
+    border-radius: 5px;
+}
+main article{
+    box-shadow: 0px 0px 5px 1px gray;
+    padding: 15px;
+    border-radius: 4px;
+    min-height: 120px;
+    width: 380px;
+}
+main header{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+main form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form input[type='text']{
+    flex: 1;
+    padding: 4px;
+    border: none;
+    background: #e6e6e6;
+    border-radius: 5px 0px 0px 5px;
+    outline-color:#5fb8ff ;
+}
+form .submit{
+    background: #5fb8ff;
+    border: none;
+    padding: 4px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+}
+form .submit.edit{
+    padding: 4px 10px;
+}
+form input[type='text']::placeholder{
+    padding-left: 5px;
+}
+.btn-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.btn-holder .clear{
+    border: none;
+    background: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: brown;
+    cursor: pointer;
+}
+.main-holder-for-tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-holder-for-tasks p{
+    flex: 1;
+}
+.btn-div-holder{
+    display: flex;
+    column-gap: 7px;
+    padding-right: 5px;
+}
+.btn-div-holder button{
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.btn-div-holder .fa-trash{
+    color: red;
+}
+.btn-div-holder .fa-pen-to-square{
+    color: green;
+}
+
+.message-container{
+    text-align: center;
+    background-color: #c61313;
+    color: blue;
+    text-transform: capitalize;
+    border-radius: 3px;
+    margin-top: 10px;
+    transition: .5s;
+    height: 0px;
+    overflow: hidden;
+    opacity: 1;
+}
+.msg-for-empty-text{
+    text-align: center;
+    margin: 5px 0px;
+    color: white;
+    border-radius: 5px;
+    transition: .25s;
+    height: 0px;
+    overflow: hidden;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: math;
+}
+
+.hidden{
+    display: none;
+}
+.message-container .storedvalue{
+    pointer-events: none;
+}
+
+.DivForConfiramtionMessage p{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: monospace;
+    margin-bottom: 5px;
+}
+.DivForConfiramtionMessage{
+    box-shadow: 0px 0px 5px 0px gray;
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 325px;
+}
+
+.DivForConfiramtionMessage .BtnConfirmationDiv .btnConfirm{
+    text-align: center;
+    min-width: 60px;
+    border: solid #5fb8ff 1px;
+    background: #5fb8ff;
+    border-radius: 3px;
+}
+.BtnConfirmationDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.items-container .timeZone{
+    letter-spacing: -.5px;
+    font-size: 12px;
+    text-align: right;
+}
+.items-container .main-task-container{
+    margin: 5px 0px;
+    box-shadow: 0px 1px 2px -1px gray;
+    padding: 5px 0px;
+}
+.color-blue{
+    background: #5fb8ff;
+}
+.color-red{
+    background: #c61313;
+}
+.color-green{
+    background: green;
+}

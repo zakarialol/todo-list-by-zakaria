@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list array </title>
+    <link rel="stylesheet" href="./css-font/all.min.css">
+    <link rel="stylesheet" href="to-do-list-array.css">
+</head>
+<body>
+    <main>
+        <article>
+            <!-- header message -->
+            <p class="message"></p>
+
+            <!-- header -->
+            <header>
+                <p>important tasks</p>
+            </header>
+            <!-- alert message  -->
+            <div class="alert-message"></div>
+            <!-- form -->
+            <form autocomplete="off" id="form">
+                <input type="text" class="inputvalue" placeholder="e.g.eggs" name="input" id="">
+                <button type="submit" value="submit" class="submit">submit</button>
+                <button type="submit" value="edit" class="submit edit hidden ">edit</button>
+            </form>
+            <!-- message container -->
+            <div class="DivForConfiramtionMessage hidden">
+                <p>are you sure you want to delete all tasks</p>
+                <div class="BtnConfirmationDiv">
+                    <button class="btnConfirm btnYes" onclick="Confimation(true)">yes</button>
+                    <button class="btnConfirm btnNo" onclick="Confimation(false)">no</button>
+                </div>
+            </div>
+            <!-- items-container -->
+            <div class="items-container">
+            </div>
+            <!-- message div -->
+            <div class="message-container">
+                <p class="storedvalue hidden"></p>
+            </div>
+            <!-- clear-message -->
+            <div class="btn-holder">
+                <button class="clear">clear all items</button>
+            </div>
+        </article>
+    </main>
+    <script src="to-do-list-array.js"></script>
+</body>
+</html>
